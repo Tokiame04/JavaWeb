@@ -14,7 +14,6 @@ public class Main {
         jedis.set("high","170");
         // get 输出结果
         System.out.println("name:"+jedis.get("name")+"\nage:"+jedis.get("age")+"\nhigh"+jedis.get("high"));
-
         // list 列表
         jedis.lpush("list","1","2","3","4");
         System.out.println("list: "+jedis.lrange("list",0,-1));
