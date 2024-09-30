@@ -18,6 +18,5 @@ public class Main {
         // list 列表
         jedis.lpush("list","1","2","3","4");
         System.out.println("list: "+jedis.lrange("list",0,-1));
-
     }
 }
